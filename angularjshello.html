@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app>
+
+  <head>
+    <title>AngularJS Hello World</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="angularjstime.html">AngularJS Dynamic Clock</a></li>
+          <li><a href="php.html">PHP</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <label>Dein Name:</label>
+      <input type="text" ng-model="Name">
+      <h1>Hello {{Name}}!</h1>
+    </div>
+  </body>
+
+</html>
