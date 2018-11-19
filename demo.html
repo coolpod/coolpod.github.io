@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="caesarApp">
+  <head>
+    <title>Caesar Demo App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="angularjshello.html">AngularJS Hello World</a></li>
+          <li><a href="angularjstime.html">AngularJS Dynamic Clock</a></li>
+          <li><a href="demo.html">Demo</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <div ng-controller="CaesarCtrl">
+
+      <input type="text" placeholder="Enter plaintext" ng-model="plainStr">
+
+      <input type="number" placeholder="Enter Number" ng-model="codeNum">
+
+      <input type="text" value="{{caesarStr}}">
+
+      <button ng-click="sendRequest()">SEND NUDES</button>
+
+    </div>
+    <script type="text/javascript">
+    angular.module('caesarApp',[])
+    .controller('CaesarCtrl',
+    function($scope,$http){
+      $scope.sendRequest = function(){
+        $http.post("https://reqres.in/api/users",{"name":$scope.plainStr,"job":$scope.codeNum})
+        .then(function(response){
+          $scope.caesarStr = response.data.name;
+        });
+      };
+    });
+
+    </script>
+  </body>
+</html>
