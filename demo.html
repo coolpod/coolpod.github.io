@@ -20,7 +20,7 @@
 
       <input type="text" placeholder="Enter plaintext" ng-model="plainStr">
 
-      <input type="number" placeholder="Enter Number" ng-model="codeNum">
+      <input type="number" placeholder="Enter Number" ng-model="offset">
 
       <input type="text" value="{{caesarStr}}">
 
@@ -32,9 +32,9 @@
     .controller('CaesarCtrl',
     function($scope,$http){
       $scope.sendRequest = function(){
-        $http.post("https://reqres.in/api/users",{"name":$scope.plainStr,"job":$scope.codeNum})
+        $http.post("https://reqres.in/api/users",{"text":$scope.plainStr,"offset":$scope.offset})
         .then(function(response){
-          $scope.caesarStr = response.data.name;
+          $scope.caesarStr = response.data.text;
         });
       };
     });
