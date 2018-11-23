@@ -29,7 +29,7 @@
       $scope.sendRequest = function(){
         $http.post("https://reqres.in/api/users",{"text":$scope.plainStr,"offset":$scope.offset})
         .then(function(response){
-          $scope.caesarStr = response.data.text;
+          $scope.caesarStr = response.data.createdAt;
         });
       };
     });
