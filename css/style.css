@@ -1,0 +1,79 @@
+#wrapper {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  width: 960px;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#info {
+  width: 100%;
+}
+
+#companies {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#companies td, #companies th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#companies tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#companies tr:hover {
+  background-color: #ddd;
+}
+
+#companies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04B4AE;
+  color: white;
+}
+
+#dbtable {
+  width: 50%;
+  float: left;
+  padding-top: 15px;
+}
+
+#pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#requests {
+  display: inline;
+  width: 46%;
+  float: right;
+  padding-top: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.inputcaption {
+  font-size: 18px;
+  display: inline;
+
+}
+
+.input {
+  height: 20px;
+  width: 200px;
+}
+
+.rbutton {
+  height: 20px;
+}
+
+#reqbuttons {
+  margin-top: 10px;
+  width:100%;
+}
