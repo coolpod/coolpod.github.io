@@ -1,7 +1,9 @@
 angular.module('dbApp',[])
 .controller('TableCtrl',
 function($scope,$http){
-  var page = 0;
+  $scope.page = 1;
+  var page = $scope.page -1;
+
   $scope.getRequest = function(){
     $http.get("https://reqres.in/api/users?page=1")
     .then(function(response){
