@@ -39,9 +39,16 @@
 }
 
 #dbtable {
-  width: 50%;
+  width: 598px;
   float: left;
-  padding-top: 15px;
+  border: 1px solid #DEDCD9;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #pagination {
@@ -51,17 +58,21 @@
 
 #requests {
   display: inline;
-  width: 46%;
+  width: 278px;
   float: right;
-  padding-top: 15px;
-  padding-left: 2%;
-  padding-right: 2%;
+  border: 1px solid #DEDCD9;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .inputcaption {
   font-size: 18px;
   display: inline;
-
 }
 
 .input {

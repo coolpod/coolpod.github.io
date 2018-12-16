@@ -24,4 +24,11 @@ function($scope,$http){
       $scope.addstatus = response.data.status;
     });
   };
+
+  $scope.delete = function(){
+    $http.post("/db/api/delete",{"id":$scope.id,"trademark":$scope.trademark})
+    .then(function(response){
+      $scope.addstatus = response.data.status;
+    });
+  };
 });

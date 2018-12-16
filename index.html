@@ -24,9 +24,9 @@
           </tr>
         </table>
         <div id="pagination">
-          <button class="pbutton"><<</button>
-          <input value="{{page}}" style="width:15px;">
-          <button class="pbutton">>></button>
+          <button class="pbutton" ng-click="prevPage()"><<</button>
+          <input ng-model-options="{updateOn : 'change blur'}" value="{{page}}" style="width:15px;">
+          <button class="pbutton" ng-click="nextPage()">>></button>
         </div>
       </div>
       <div id="requests">
