@@ -1,49 +1,12 @@
-<!doctype html>
-<html ng-app="dbApp">
-  <head>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>die-brenda.io</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-  </head>
-  <body>
-    <div id="wrapper" ng-controller="TableCtrl">
-      <header id="info">
-        <h1 style="color:red;">Nutzt momentan zu Testwecken Daten von https://reqres.in/api/users?page=2</h1>
-      </header>
-      <div id="dbtable">
-        <table id="companies">
-          <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-          </tr>
-          <tr ng-repeat="e in element">
-            <td>{{e.id}}</td>
-            <td>{{e.first_name}}</td>
-            <td>{{e.last_name}}</td>
-          </tr>
-        </table>
-        <div id="pagination">
-          <button class="pbutton" ng-click="prevPage()"><<</button>
-          <input ng-model-options="{updateOn : 'change blur'}" value="{{page}}" style="width:15px;">
-          <button class="pbutton" ng-click="nextPage()">>></button>
-        </div>
-      </div>
-      <div id="requests">
-        <p class="inputcaption">ID: </p> </br>
-        <input class="input" placeholder="id" value="{{id}}"> </br></br>
-        <p class="inputcaption">Trademark Text: </p> </br>
-        <input class="input" placeholder="trademark" value="{{trademarks}}"> </br></br>
-        <p class="inputcaption">(Owner): </p> </br>
-        <input class="input" placeholder="Owner">
-        <div id="reqbuttons">
-          <button class="rbutton" ng-click="getRequest()">Search</button>
-          <button class="rbutton">Add</button>
-          <button class="rbutton">Delete</button> </br></br>
-          <h1>{{addstatus}}</h1>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="javascript/tablectrl.js"></script>
-  </body>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Entrance Map</title>
+</head>
+<body>
+  <div>
+    <img src="map.png" alt="entrace_map">
+  </div>
+</body>
 </html>
